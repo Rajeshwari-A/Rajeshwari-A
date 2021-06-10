@@ -1,0 +1,5 @@
+.profile-details-container {
+    display: grid;
+    grid-template-rows: minmax(20px, auto);
+    height: 100%;
+}

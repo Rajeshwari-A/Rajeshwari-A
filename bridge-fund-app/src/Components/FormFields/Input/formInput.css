@@ -1,0 +1,56 @@
+input::-ms-reveal,
+      input::-ms-clear {
+        display: none;
+      }
+
+.input-label {
+    display: block;
+    color: #116FDC;
+    font-size: 15px;
+    margin: 10px 0px;
+}
+
+.form-input {
+    border: 1px solid #116FDC57;
+    width: 90%;
+    height: 40px;
+    margin: 10px 0px 30px 0px;
+    display: block;
+}
+
+.form-input:focus::after {
+    content: none;
+}
+
+.form-input:focus {
+    border: 2px solid #116FDC57;
+}
+
+.form-checkbox {
+    border: 1px solid #BAB4B4;
+    border-radius: 3px;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+/* Edge */
+/* ::-webkit-input-placeholder {
+    color: #BABABA;
+    font-size: 1em;
+    padding-left: 21px;
+  } */
+  
+
+  /* Internet Explorer */
+  /* :-ms-input-placeholder { 
+    color: #BABABA;
+    font-size: 1em;
+    padding-left: 21px;
+  } */
+  
+  ::placeholder {
+    color: #BABABA;
+    font-size: 1em;
+    padding-left: 5%;
+  }
