@@ -13,7 +13,7 @@ const LenderProfile = ({ children, btnEnable }) => {
                     <li className="menu-item"><Link className="profile-link">1. Profile Details</Link></li>
                     <li className="menu-item"><Link className="profile-link">2. Residence Details</Link></li>
                     <li className="menu-item"><Link className="profile-link">3. Contact Details</Link></li>
-                    <li className="menu-item"><Link className="profile-link">4. Benificiary Details</Link></li>
+                    <li className="menu-item"><Link className="profile-link">4. Beneficiary Details</Link></li>
                     <li className="menu-item"><Link className="profile-link">5. Account Details</Link></li>
                     <li className="menu-item"><Link className="profile-link">6. Add Comments</Link></li>
                     <li className="menu-item"><Link className="profile-link">7. Review Profile</Link></li>

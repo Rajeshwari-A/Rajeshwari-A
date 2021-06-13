@@ -4,7 +4,7 @@ import './lender-contact-details.css';
 import InputField from '../../../FormFields/Input/formInput';
 
 
-const LenderContactDetails = () => {
+const ILenderContactDetails = () => {
 
     return (
         <React.Fragment>
@@ -62,4 +62,4 @@ const LenderContactDetails = () => {
     );
 }
 
-export default LenderContactDetails;
+export default ILenderContactDetails;

@@ -1,0 +1,84 @@
+.account-details-section {
+    height: 100%;
+}
+
+.account-details-wrapper {
+    display: grid;
+    grid-template-rows: minmax(20px, auto);
+    /* height: 100%; */
+    text-align: left;
+    align-items: center;    
+    grid-row-gap: 20px;
+}
+
+
+.account-details-subheader {
+    /* margin-top: 0%; */
+    margin-left: 4%;
+}
+
+.account-block {
+    display: grid;
+    grid-template-columns: 45% 3% 10% 3% 10%;
+    align-items: center;
+    font-size: 1.2em;
+    /* width: 80%; */
+}
+
+.radio-span {
+    margin-left: 15%;
+    font-size: 12px;
+    /* color: #116FDC; */
+    font-size: 0.7em;
+    color: #797777;
+}
+
+.wells-fargo-details-block {
+    display: grid;
+    grid-template-rows: minmax(20px, auto);
+    border: 1px solid black;
+    margin: 3%;
+    color: #797777;
+}
+
+
+.wells-fargo-wrapper {
+    display: grid;
+    grid-template-rows: minmax(20px, auto);
+    grid-row-gap: 20px;
+    margin: 2%;
+    text-align: left;
+}
+
+.bank-type {
+    display: grid;
+    grid-template-columns: 16% 30%;
+    align-items: center;
+}
+
+.account-holder-details {
+    display: grid;
+    grid-template-columns: 14.5% 40% 15% 30%;
+    align-items: center;
+}
+
+.account-type-details {
+    display: grid;
+    grid-template-columns: 14.5% 40% 15% 30%;
+    align-items: center;
+}
+
+.table-sub-header {
+    margin: 2%;
+    font-size: 14px;
+}
+
+.accounts-span {
+    margin-left: 5%;
+    margin: 2% 3%;
+}
+
+.right-align {
+    /* margin-left: 5%; */
+    text-align: end;
+}
