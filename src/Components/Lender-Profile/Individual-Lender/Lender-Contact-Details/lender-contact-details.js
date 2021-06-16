@@ -13,13 +13,13 @@ const ILenderContactDetails = () => {
                     <h2 className="contact-details-subheader">Contact Details</h2>
                     <div className="contact-details-wrapper">
                         <div className="contact-block lender-email">
-                            <span className="input-label-span">Email*</span>
+                            <span className="input-label-span email-span">Email*</span>
                             <InputField type="text" value="" name="month" placeholder=""
                                 className="form-input profile-input"
                             />
                         </div>
                         <div className="contact-number">
-                            <span className="input-label-span">Phone Number</span>
+                            <span className="input-label-span contact-number-span">Phone Number</span>
                             <InputField type="text" value="" name="ssn-id-1" placeholder=""
                                 className="form-input profile-input"
                             />
@@ -33,16 +33,16 @@ const ILenderContactDetails = () => {
                             />
                         </div>
                         <div className="emergency-contact">
-                            <span className="input-label-span">Emergency Contact*</span>
-                            <InputField type="text" value="" name="month" placeholder="first"
-                                className="form-input profile-input"
+                            <span className="input-label-span emergency-contact-span">Emergency Contact*</span>
+                            <InputField type="text" value="" name="month" placeholder="First"
+                                className="form-input profile-input firstname"
                             />
-                            <InputField type="text" value="" name="month" placeholder="last"
-                                className="form-input profile-input"
+                            <InputField type="text" value="" name="month" placeholder="Last"
+                                className="form-input profile-input lastname"
                             />
                         </div>
                         <div className="alternate-contact">
-                            <span className="input-label-span">Emergency Contact Number*</span>
+                            <span className="input-label-span alternate-contact-span">Emergency Contact Number*</span>
                             <InputField type="text" value="" name="month" placeholder=""
                                 className="form-input profile-input"
                             />

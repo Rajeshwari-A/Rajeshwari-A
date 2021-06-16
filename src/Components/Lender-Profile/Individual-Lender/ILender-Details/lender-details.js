@@ -18,15 +18,15 @@ const ILenderDetails = () => {
                     </div> */}
                     <div className="lender-details-block">
                         <div className="lender-name-block">
-                            <span className="input-label-span">Full Legal Name</span>
-                            <InputField type="text" value="" name="firstname" placeholder="" className="form-input firstname" />
-                            <InputField type="text" value="" name="lastname" placeholder=""
+                            <span className="input-label-span lender-name-label">Full Legal Name</span>
+                            <InputField type="text" value="" name="firstname" placeholder="First" className="form-input firstname" />
+                            <InputField type="text" value="" name="lastname" placeholder="Last"
                                 className="form-input lastname"
                             />
                         </div>
                         <div className="dob-wrapper">
-                            <span className="input-label-span">Date of Birth</span>
-                            <select className="form-select"></select>
+                            <span className="input-label-span lender-dob-label">Date of Birth</span>
+                            <select className="form-select select-month"></select>
                             <span className="char-span"> / </span>
                             <InputField type="text" value="" name="month" placeholder=""
                                 className="form-input profile-input"
@@ -39,7 +39,7 @@ const ILenderDetails = () => {
                             />
                         </div>
                         <div className="lender-id-block">
-                            <span className="input-label-span">SSN</span>
+                            <span className="input-label-span lender-id-span">SSN</span>
                             <InputField type="text" value="" name="ssn-id-1" placeholder=""
                                 className="form-input profile-input"
                             />
@@ -53,7 +53,7 @@ const ILenderDetails = () => {
                             />
                         </div>
                         <div className="text-wrapper">
-                            <span className="input-label-span">Upload Valid ID Proof</span>
+                            <span className="input-label-span text-span">Upload Valid ID Proof</span>
                             <span className="text-span">
                                 ( You can upload US driver’s license (in or out-of-state)/US passport/Firearms
                                 identification card/US Armed Forces identification Identification issued by a state agency
@@ -63,7 +63,7 @@ const ILenderDetails = () => {
                         <div className="lender-profile-item">
                             <div></div>
                             <span className="text-span content-span">Type</span>
-                            <select className="form-select"></select>
+                            <select className="form-select select-type"></select>
                         </div>
                         <div className="upload-files-wrapper">
                             <div></div>

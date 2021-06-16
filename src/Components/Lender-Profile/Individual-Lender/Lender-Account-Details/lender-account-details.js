@@ -15,15 +15,15 @@ const ILenderAccountDetails = () => {
                     <h2 className="account-details-subheader">Account Details</h2>
                     <div className="account-details-wrapper">
                         <div className="account-block">
-                            <span className="input-label-span">Do you have a Chase/Wells-Fargo Account?</span>
+                            <span className="input-label-span input-text-span">Do you have a Chase/Wells-Fargo Account?</span>
                             <InputField type="radio" value="" name="radio-yes" placeholder=""
-                                className="form-input profile-input" id="radio-yes"
+                                className="form-input profile-input input-radio-1" id="radio-yes"
                             />
-                            <label className="radio-span" for="radio_yes">Yes</label>
+                            <span className="radio-span radio-span-1" for="radio_yes">Yes</span>
                             <InputField type="radio" value="" name="radio-no" placeholder=""
-                                className="form-input profile-input" id="radio-no"
+                                className="form-input profile-input input-radio-2" id="radio-no"
                             />
-                            <label className="radio-span" for="radio_no">No</label>
+                            <span className="radio-span radio-span-2" for="radio_no">No</span>
                         </div>
                         <div className="wells-fargo-details-block">
                             <p className="table-sub-header">Fill in all the required fields</p>
@@ -35,19 +35,19 @@ const ILenderAccountDetails = () => {
                                 <div className="account-holder-details">
                                     <span className="input-label-span accounts-span">Account name*</span>
                                     <InputField type="text" value="" name="account-name" placeholder=""
-                                        className="form-input profile-input" id="account-name"
+                                        className="form-input profile-input account-name" id="account-name"
                                     />
                                     <span className="input-label-span accounts-span right-align">Account number*</span>
                                     <InputField type="text" value="" name="account-no" placeholder=""
-                                        className="form-input profile-input" id="account-no"
+                                        className="form-input profile-input account-number" id="account-no"
                                     />
                                 </div>
                                 <div className="account-type-details">
-                                    <span className="input-label-span accounts-span">Account Type*</span>
+                                    <span className="input-label-span accounts-type-span">Account Type*</span>
                                     <InputField type="text" value="" name="account-type" placeholder=""
-                                        className="form-input profile-input" id="account-type"
+                                        className="form-input profile-input account-type-input" id="account-type"
                                     />
-                                    <span className="input-label-span accounts-span right-align">Routing Number*</span>
+                                    <span className="input-label-span routing-number-span right-align">Routing Number*</span>
                                     <InputField type="text" value="" name="routing-num" placeholder=""
                                         className="form-input profile-input" id="routing-num"
                                     />

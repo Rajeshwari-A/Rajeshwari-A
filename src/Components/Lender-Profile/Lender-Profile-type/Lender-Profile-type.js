@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import LenderProfile from '../lender-profile';
 import avatarI from '../../../Asserts/Individual_Avatar.png';
 import avatarG from '../../../Asserts/Group_Avatar.png';
+import avatarI_Active from '../../../Asserts/‌Individual_Avatar_Active.png';
+import avatarG_Active from '../../../Asserts/Group_Avatar_Active.png';
 import '../lender-profile.css';
 import './lender-profile-type.css'
 
@@ -18,29 +20,29 @@ const LenderProfileType = () => {
             setGroupAvatarActive(false);
             return;
         }
-        else {
+        // else {
             setIndividualAvatarActive(false);
             setGroupAvatarActive(true);
-        }
+        // }
     }
 
     return (
         <React.Fragment>
             <LenderProfile btnEnable={isGroupAvatarActive || isIndividualAvatarActive}>
                 {/* <div className="data-wrapper"> */}
-                <div className="avatar-wrapper">
-                    <div className={`avatar ${isIndividualAvatarActive ? "avatar_i_active" : "avatar_i"}`} onClick={() => selectLenderType('i')}>
-                        <p className={`${isIndividualAvatarActive ? "avatar-type_active" : "avatar-type"}`}>Individual</p>
-                        <img src={avatarI} />
+                <section className="lender-type-section">
+                    <div className="subheader-text">I am a</div>
+                    <div className="avatar-wrapper">
+                        <div className={`avatar ${isIndividualAvatarActive ? "avatar-Active" : ""}`}  onClick={() => selectLenderType('i')}>
+                            <p className={`lender-type-text ${isIndividualAvatarActive && "avatar-label_active"}`}>Individual</p>
+                            <img src={`${isIndividualAvatarActive ? avatarI_Active : avatarI}`} className="avatar_i" alt="individual-icon" />
+                        </div>
+                        <div className="avatar" onClick={() => selectLenderType('g')}>
+                            <p className={`lender-type-text ${isGroupAvatarActive ? "avatar-label_active" : ""}`} >Entity</p>
+                            <img className="avatar_g" src={`${isGroupAvatarActive ? avatarI_Active : avatarG}`} alt="group-icon" />
+                        </div>
                     </div>
-                    <div className="lender-text">I am a</div>
-                    <div className={`avatar ${isGroupAvatarActive ? "avatar_g_active" : "avatar_g"}`} onClick={() => selectLenderType('g')}>
-                        <p className={`${isGroupAvatarActive ? "avatar-type_active" : "avatar-type"}`} >Entity</p>
-                        <img src={avatarG}/>
-                    </div>
-                </div>
-                {/* </div> */}
-                
+                </section>
             </LenderProfile>
         </React.Fragment>
     );

@@ -12,14 +12,14 @@ const LenderResidenceDetails = () => {
                 <section className="residence-details-wrapper">
                     <h2 className="residence-details-subheader">Residence Details</h2>
                     <div className="address-block address-line-1">
-                        <span className="input-label-span">Address Line 1*</span>
-                        <InputField type="text" value="" name="month" placeholder=""
+                        <span className="input-label-span residence-details-span">Address Line 1*</span>
+                        <InputField type="text" value="" name="month" placeholder="Street Name"
                             className="form-input profile-input"
                         />
                     </div>
                     <div className="address-block address-line-2">
                         <span className="input-label-span residence-details-span">Address Line 2</span>
-                        <InputField type="text" value="" name="month" placeholder=""
+                        <InputField type="text" value="" name="month" placeholder="Apt, Suit no"
                             className="form-input profile-input"
                         />
                     </div>

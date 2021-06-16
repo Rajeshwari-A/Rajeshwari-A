@@ -4,7 +4,7 @@
     grid-template-rows: minmax(20px, auto);
     height: 100%;
     text-align: left;
-    grid-row-gap: 20px;
+    grid-row-gap: 12px;
 }
 
 .address-block {
@@ -19,7 +19,7 @@
     grid-template-columns: 1.99fr 1.2fr 1fr 0.8fr 2fr;
     align-items: center;
     margin: 3% 2% 3% 0;
-    grid-row-gap: 6px;
+    grid-row-gap: 12px;
 
 }
 
@@ -30,15 +30,18 @@
 @media screen and (max-width: 480px) {
 
     .residence-details-span {
-        margin: 5% auto;
+        /* margin: 5% auto; */
+        /* text-align: left; */
+        margin-left: 5%;
     }
 
     .residence-details-wrapper {
-        text-align: center;
+        text-align: left;
     }
 
     .address-block {
         grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 
     .postal-address-block {
