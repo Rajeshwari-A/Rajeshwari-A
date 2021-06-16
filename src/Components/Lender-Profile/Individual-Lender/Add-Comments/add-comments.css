@@ -1,0 +1,28 @@
+.add-comments-section {
+    height: 100%;
+}
+
+.add-comments-subheader {
+    /* margin-top: 0%; */
+    margin-left: 4%;
+}
+
+/* .comments-block {
+    
+    
+} */
+
+.add-comments-wrapper {
+    display: grid;
+    grid-template-rows: minmax(20px, auto);
+    height: 100%;
+    border: 1px solid #707070;
+    margin: 5%;
+}
+
+@media screen and (max-width: 480px) {
+    .add-comments-wrapper {
+        height: 145%;
+    }
+}
+

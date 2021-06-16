@@ -41,7 +41,7 @@
 
 .beneficiary-relationship-block {
     display: grid;
-    grid-template-columns: 27% 40%;
+    grid-template-columns: 25.8% 40%;
     text-align: left;
     align-items: center;
 }

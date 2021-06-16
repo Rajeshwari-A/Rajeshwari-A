@@ -1,9 +1,18 @@
 h1 {
-    font-size: 39px;
+    font-size: 1.5em;
+    margin-bottom: 0px;
 }
 
 p {
     font-size: 22px;
+}
+
+span {
+   font-size: 1.3em;
+}
+
+a {
+    font-size: 0.85em;
 }
 
 .loginForm {
@@ -23,6 +32,12 @@ p {
     /* opacity: 1; */
 }
 
+.title-discription {
+    padding: 0px;
+    margin-top: 5%;
+    margin-bottom: 15%;
+}
+
 .login-remainder-span {
     display: inline;
     font-size: 13px;
@@ -38,7 +53,7 @@ p {
     cursor: pointer;
 }
 
-.login-btn-grid {
+.btn-grid {
     margin: 50px 0px;
     display:flex;
     justify-content:center;

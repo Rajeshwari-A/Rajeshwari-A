@@ -20,7 +20,7 @@ const IBeneficiaryDetailsContainer = () => {
             <LenderProfile btnEnable={true}>
                 <div className="beneficiary-details-container">
                     <div className="container-subheader-wrapper">
-                        <h2 className="sub-header">beneficiary Details</h2>
+                        <h2 className="sub-header">Beneficiary Details</h2>
                     </div>
                     <BeneficiaryDetails />
 

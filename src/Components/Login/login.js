@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 import bridgingImg from '../../Asserts/bridging-Loan.png';
 import InputField from '../FormFields/Input/formInput';
 import Button from '../FormFields/Button/button';
@@ -19,7 +20,7 @@ const Login = () => {
             </div>
             <div className="loginForm">
                 <h1>Login</h1>
-                <p>Hello! Let's get started</p>
+                <p className="title-discription">Hello! Let's get started</p>
                 <InputField
                     type="text"
                     label="Email"
@@ -42,10 +43,15 @@ const Login = () => {
                 />
                 <span className="login-remainder-span">Remember me</span>
                 <span className="forgot-password">Forgot Password?</span>
-                <div className="login-btn-grid">
+                <div className="btn-grid">
                     <Button name="Login" className="button btn-primary"></Button>
                 </div>
+                <div className="login-link">
+                    <span>Don’t have an account? </span>
+                    <Link to="/create-account">Create Account</Link>
+                </div>
             </div>
+            <footer></footer>
         </React.Fragment>
     )
 }
