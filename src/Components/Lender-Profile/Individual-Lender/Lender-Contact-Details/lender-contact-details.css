@@ -66,8 +66,7 @@
 @media screen and (max-width: 480px) {
 
     .contact-details-subheader {
-        margin-left: 4%;
-        margin-top: 5%;
+        margin: 3% 4%;
         text-align: left;
     }
 

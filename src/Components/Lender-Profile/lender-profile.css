@@ -31,9 +31,6 @@ h2 {
     width: 90%
 }
 
-.class-dot {
-}
-
 .menu-item {
     display: flex;
     background-color: #E5F1FF;
@@ -42,6 +39,10 @@ h2 {
     font-size: 12px;
     cursor: pointer;
     padding-left: 10%;
+}
+
+.menu-item-active {
+    background: #116FDC;
 }
 
 .section-details {
@@ -71,6 +72,19 @@ h2 {
 .profile-link {
     display: contents;
     text-decoration: none;
+}
+
+/* .profile-link-active {
+    color: #ffffff;
+}
+
+.menu-span-link-active {
+    color: #ffffff;
+} */
+
+.active-link {
+    color: #ffffff;
+    font-weight: 700;
 }
 
 .btn-wrapper {
@@ -128,6 +142,13 @@ h2 {
     position: absolute;
 }
 
+.line-link {
+    display: none;
+}
+
+
+
+
 @media screen and (max-width: 480px) {
 
     h2 {
@@ -150,15 +171,12 @@ h2 {
     .lender-profile-menu {
         grid-row: 1/2;
         grid-column: 1/8;
-        grid-template-columns: repeat(8, 1fr);
+        grid-template-columns: repeat(15, 1fr);
         grid-template-rows: auto;
         padding: 0px;
         align-items: center;
-        /* margin: auto; */
         width: 100%;
-        /* height: 100px; */
-        /* grid-column-gap: 2%; */
-        display: grid;
+        display: flex;
         align-content: flex-start;
         margin: 20% auto;
     }
@@ -212,7 +230,45 @@ h2 {
         right: 30%;
     }
 
-    .class-dot {
+    .class-dot {  
         display: none;
+    }
+
+    .line-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* width: 6%; */
+    }
+
+    .line-link::after {
+        content: "";
+        display: flex;
+        height: 1px;
+        /* background: #116FDC; */
+        background: #CCCCCC;;
+        position: absolute;
+    }
+}
+
+
+@media screen and (min-width: 320px) {
+
+    .line-link::after {
+        width: 5.5%;
+    }
+}
+
+@media screen and (min-width: 375px) {
+
+    .line-link::after {
+        width: 6.5%;
+    }
+}
+
+@media screen and (min-width: 425px) {
+
+    .line-link::after {
+        width: 7.2%;
     }
 }

@@ -22,12 +22,12 @@ function App() {
           <PublicRoute restricted={false} path="/" exact component={Login} />
           <PublicRoute restricted={false} path="/create-account" exact component={CreateAccount} />
           <PublicRoute restricted={false} path="/create-profile" exact component={LenderProfileType} />
-          <PublicRoute restricted={false} path="/create-profile-I" exact component={IlenderDetailsContainer} />
-          <PublicRoute restricted={false} path="/create-profile-r" exact component={IlenderResidenceDetails} />
-          <PublicRoute restricted={false} path="/create-profile-c" exact component={ILenderContactDetails} />
-          <PublicRoute restricted={false} path="/create-profile-b" exact component={IBeneficiaryDetails} />
-          <PublicRoute restricted={false} path="/create-profile-a" exact component={ILenderAccountDetails} />
-          <PublicRoute restricted={false} path="/create-profile-ac" exact component={IAddComments} />
+          <PublicRoute restricted={false} path="/create-profile/lender-details" exact component={IlenderDetailsContainer} />
+          <PublicRoute restricted={false} path="/create-profile/residence-details" exact component={IlenderResidenceDetails} />
+          <PublicRoute restricted={false} path="/create-profile/contact-details" exact component={ILenderContactDetails} />
+          <PublicRoute restricted={false} path="/create-profile/beneficiary-details" exact component={IBeneficiaryDetails} />
+          <PublicRoute restricted={false} path="/create-profile/account-details/" exact component={ILenderAccountDetails} />
+          <PublicRoute restricted={false} path="/create-profile/add-comments" exact component={IAddComments} />
         </Switch>
       </Router>
     </div>

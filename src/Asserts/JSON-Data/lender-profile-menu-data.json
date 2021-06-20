@@ -1,0 +1,22 @@
+{
+    "menuData": {
+        "1": "Profile Details",
+        "2": "Residence Details",
+        "3": "Contact Details",
+        "4": "Beneficiary Details",
+        "5": "Account Details",
+        "6": "Add Comments",
+        "7": "Review Profile",
+        "8": "Sign and Submit Profile"
+    },
+    "navlinksData": {
+        "1": "lender-details",
+        "2": "residence-details",
+        "3" : "contact-details",
+        "4": "beneficiary-details",
+        "5": "account-details",
+        "6": "add-comments",
+        "7": "review-profile",
+        "8": "sign-&-submit"
+    }
+}

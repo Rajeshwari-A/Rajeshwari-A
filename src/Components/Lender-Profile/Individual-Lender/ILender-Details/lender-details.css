@@ -235,6 +235,10 @@ input[type="file"] {
         margin-top: 7%;
     }
 
+    .profile-subheader-wrapper {
+        margin: auto 4%;
+    }
+
     .lender-name-block {
         /* display: block; */
         grid-template-columns: 1fr;
@@ -246,7 +250,7 @@ input[type="file"] {
     .lender-name-label {
         grid-column: 1/3;
         grid-row: 1/2;
-        margin-left: 3%;
+        margin-left: 5%;
     }
 
     .firstname {
@@ -269,7 +273,7 @@ input[type="file"] {
 
     .lender-dob-label {
         grid-column: 1/6;
-        margin-left: 0%;
+        margin-left: 2%;
     }
 
     .select-month {
@@ -286,7 +290,7 @@ input[type="file"] {
 
     .lender-id-span {
         grid-column: 1/6;
-        margin-left: 0%;
+        margin-left: 2%;
     }
 
     .text-wrapper {
@@ -318,7 +322,9 @@ input[type="file"] {
         grid-template-rows: auto auto;
         margin: 0 5%;
         margin-bottom: 5%;
+        margin-top: 5%;
         width: 85%;
+        grid-row-gap: 0px;
     }
 
     .file-upload-span {

@@ -21,7 +21,7 @@ const CreateAccount = () => {
             </div>
             <div className="create-lender-form">
                 <h1>Create Account</h1>
-                <p class="title-discription">Hi! This is a by-invitation-only system</p>
+                <p className="title-discription">Hi! This is a by-invitation-only system</p>
                 <InputField
                     type="text"
                     label="Invite Code"
