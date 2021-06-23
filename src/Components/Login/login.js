@@ -3,11 +3,21 @@ import { Link } from "react-router-dom";
 import bridgingImg from '../../Asserts/bridging-Loan.png';
 import InputField from '../FormFields/Input/formInput';
 import Button from '../FormFields/Button/button';
+
 import './login.css';
 
 const Login = () => {
 
     const [viewPassword, setViewPassword] = useState(false);
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [hasAccount, setHasAccount] =useState(false);
+
+
+
+    const handleLogin = () => {
+
+    }
 
     const togglePasswordView = () => {
         setViewPassword(!viewPassword);
@@ -42,7 +52,7 @@ const Login = () => {
                     placeholder="password"
                 />
                 <span className="login-remainder-span">Remember me</span>
-                <span className="forgot-password">Forgot Password?</span>
+                <Link to="/forgot-password" className="forgot-password">Forgot Password?</Link>
                 <div className="btn-grid">
                     <Button name="Login" className="button btn-primary"></Button>
                 </div>

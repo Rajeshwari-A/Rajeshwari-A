@@ -23,7 +23,8 @@ input::-ms-reveal,
 }
 
 .form-input:focus {
-    border: 2px solid #116FDC57;
+  outline: none;
+  border: 2px solid #116FDC57;
 }
 
 .form-checkbox {
