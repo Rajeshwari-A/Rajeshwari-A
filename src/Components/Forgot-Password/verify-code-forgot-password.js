@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Link } from "react-router-dom";
 import ForgotPasswordContainer from './forgot-password-container';
-// import bridgingImg from '../../Asserts/bridging-Loan.png';
+import chevronLeft from '../../Asserts/Icon-feather-chevron-left.svg';
 import InputField from '../FormFields/Input/formInput';
 import Button from '../FormFields/Button/button';
 import './forgot-password.css';
@@ -31,6 +31,10 @@ const VerifyCode_ForgotPassword = () => {
         <React.Fragment>
             <ForgotPasswordContainer>
                 <React.Fragment>
+                <div className="back-nav-block">
+                <img src={chevronLeft} alt="chevron-left"/>
+                <a className="back-nav">Back</a>
+            </div>
                     <h1>Verify Code</h1>
                     <p className="title-discription">Enter the verification code we just sent you on your email address</p>
                     <div className="verification-code-wrapper" id="code">
