@@ -12,3 +12,9 @@
     border: 1px solid #116FDC;
     cursor: pointer;
 }
+
+.btn-disabled {
+    background-color: #CBCBCB;
+    border: 1px solid #CBCBCB;
+
+}

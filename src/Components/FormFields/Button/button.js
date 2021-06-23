@@ -2,7 +2,7 @@ import React from 'react';
 import './button.css';
 
 
-const Button = ({onClick, className, name, type }) => {
+const Button = ({onClick, className, name, type, disabled}) => {
 
     const handleClick = (e) => {
         const { value } = e.target;
@@ -11,7 +11,7 @@ const Button = ({onClick, className, name, type }) => {
 
     return (
         <React.Fragment>
-           <button type={type} onClick={handleClick} className={className}>{name}</button>
+           <button type={type} onClick={handleClick} className={`${className} ${disabled ? 'btn-disabled' : ''}`}>{name}</button>
         </React.Fragment>
     )
 

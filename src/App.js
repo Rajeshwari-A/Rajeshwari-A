@@ -1,6 +1,8 @@
 import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 import PublicRoute from "./Components/Routes/publicRoute";
 import Login from './Components/Login/login';
+import ForgotPassword from './Components/Forgot-Password/forgot-password';
+import VerifyCode_ForgotPassword from './Components/Forgot-Password/verify-code-forgot-password';
 import CreateAccount from './Components/Create-Account/create-account';
 import LenderProfileType from './Components/Lender-Profile/Lender-Profile-type/lender-profile-type';
 // import ILenderDetails from './Components/Lender-Profile/Individual-Lender/ILender-Details/lender-details';
@@ -20,6 +22,8 @@ function App() {
       <Router>
         <Switch>
           <PublicRoute restricted={false} path="/" exact component={Login} />
+          <PublicRoute restricted={false} path="/forgot-password" exact component={ForgotPassword} />
+          <PublicRoute restricted={false} path="/forgot-password/verify-code" exact component={VerifyCode_ForgotPassword} />
           <PublicRoute restricted={false} path="/create-account" exact component={CreateAccount} />
           <PublicRoute restricted={false} path="/create-profile" exact component={LenderProfileType} />
           <PublicRoute restricted={false} path="/create-profile/lender-details" exact component={IlenderDetailsContainer} />
