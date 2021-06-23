@@ -31,10 +31,10 @@ const VerifyCode_ForgotPassword = () => {
         <React.Fragment>
             <ForgotPasswordContainer>
                 <React.Fragment>
-                <div className="back-nav-block">
-                <img src={chevronLeft} alt="chevron-left"/>
-                <a className="back-nav">Back</a>
-            </div>
+                    <div className="back-nav-block">
+                        <img src={chevronLeft} alt="chevron-left" />
+                        <a className="back-nav">Back</a>
+                    </div>
                     <h1>Verify Code</h1>
                     <p className="title-discription">Enter the verification code we just sent you on your email address</p>
                     <div className="verification-code-wrapper" id="code">

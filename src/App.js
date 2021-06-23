@@ -3,7 +3,9 @@ import PublicRoute from "./Components/Routes/publicRoute";
 import Login from './Components/Login/login';
 import ForgotPassword from './Components/Forgot-Password/forgot-password';
 import VerifyCode_ForgotPassword from './Components/Forgot-Password/verify-code-forgot-password';
+import CreateNewPassword from "./Components/Forgot-Password/create-new-password";
 import EmailNotification from './Components/Forgot-Password/email-notification-page';
+import PasswordNotification from './Components/Forgot-Password/password-notification';
 import CreateAccount from './Components/Create-Account/create-account';
 import LenderProfileType from './Components/Lender-Profile/Lender-Profile-type/lender-profile-type';
 // import ILenderDetails from './Components/Lender-Profile/Individual-Lender/ILender-Details/lender-details';
@@ -25,7 +27,9 @@ function App() {
           <PublicRoute restricted={false} path="/" exact component={Login} />
           <PublicRoute restricted={false} path="/forgot-password" exact component={ForgotPassword} />
           <PublicRoute restricted={false} path="/forgot-password/verify-code" exact component={VerifyCode_ForgotPassword} />
-          <PublicRoute restricted={false} path="/forgot-password/notification" exact component={EmailNotification} />
+          <PublicRoute restricted={false} path="/forgot-password/email-notification" exact component={EmailNotification} />
+          <PublicRoute restricted={false} path="/forgot-password/password-notification" exact component={PasswordNotification} />
+          <PublicRoute restricted={false} path="/forgot-password/create-password" exact component={CreateNewPassword} />
           <PublicRoute restricted={false} path="/create-account" exact component={CreateAccount} />
           <PublicRoute restricted={false} path="/create-profile" exact component={LenderProfileType} />
           <PublicRoute restricted={false} path="/create-profile/lender-details" exact component={IlenderDetailsContainer} />
