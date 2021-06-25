@@ -3,7 +3,7 @@ import { useHistory } from 'react-router';
 import { Link } from "react-router-dom";
 import './lender-profile.css';
 import { menuData, navlinksData } from "../../Asserts/JSON-Data/lender-profile-menu-data.json";
-import LenderProfileType from './Lender-Profile-type/lender-profile-type';
+import LenderProfileType from './Lender-Profile-type/lender-Profile-type';
 import Button from '../FormFields/Button/button';
 
 

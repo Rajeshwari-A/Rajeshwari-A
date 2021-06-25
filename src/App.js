@@ -7,7 +7,7 @@ import CreateNewPassword from "./Components/Forgot-Password/create-new-password"
 import EmailNotification from './Components/Forgot-Password/email-notification-page';
 import PasswordNotification from './Components/Forgot-Password/password-notification';
 import CreateAccount from './Components/Create-Account/create-account';
-import LenderProfileType from './Components/Lender-Profile/Lender-Profile-type/lender-profile-type';
+import LenderProfileType from './Components/Lender-Profile/Lender-Profile-type/lender-Profile-type';
 // import ILenderDetails from './Components/Lender-Profile/Individual-Lender/ILender-Details/lender-details';
 import IlenderDetailsContainer from './Components/Lender-Profile/Individual-Lender/lender-details-container';
 import IlenderResidenceDetails from './Components/Lender-Profile/Individual-Lender/Lender-Residence-Details/lender-residence-details';
