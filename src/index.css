@@ -32,6 +32,11 @@ code {
     monospace;
 }
 
+.form-select:focus {
+  outline: none;
+  border: 1px solid #116FDC;
+}
+
 
 @media screen and (max-width: 480px) {
   span {

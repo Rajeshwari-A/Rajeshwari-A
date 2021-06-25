@@ -8,41 +8,41 @@ const LenderResidenceDetails = () => {
 
     return (
         <React.Fragment>
-            <LenderProfile btnEnable={true}>
+            <LenderProfile btnEnable={false} displayBtn={true} nxtNavPageID={2}>
                 <section className="residence-details-wrapper">
                     <h2 className="residence-details-subheader">Residence Details</h2>
                     <div className="address-block address-line-1">
                         <span className="input-label-span residence-details-span">Address Line 1*</span>
-                        <InputField type="text" value="" name="month" placeholder="Street Name"
+                        <InputField type="text" defaultValue="" name="month" placeholder="Street Name"
                             className="form-input profile-input"
                         />
                     </div>
                     <div className="address-block address-line-2">
                         <span className="input-label-span residence-details-span">Address Line 2</span>
-                        <InputField type="text" value="" name="month" placeholder="Apt, Suit no"
+                        <InputField type="text" defaultValue="" name="month" placeholder="Apt, Suit no"
                             className="form-input profile-input"
                         />
                     </div>
                     <div className="address-block city-block">
                         <span className="input-label-span residence-details-span">City*</span>
-                        <InputField type="text" value="" name="month" placeholder=""
+                        <InputField type="text" defaultValue="" name="month" placeholder=""
                             className="form-input profile-input"
                         />
                     </div>
                     <div className="address-block state-block">
                         <span className="input-label-span residence-details-span">State/Province*</span>
-                        <InputField type="text" value="" name="month" placeholder=""
+                        <InputField type="text" defaultValue="" name="month" placeholder=""
                             className="form-input profile-input"
                         />
                     </div>
                     <div className="postal-address-block">
                         <span className="input-label-span residence-details-span">Zip/Postal code*</span>
-                        <InputField type="text" value="" name="month" placeholder=""
+                        <InputField type="text" defaultValue="" name="month" placeholder=""
                             className="form-input profile-input"
                         />
                         <div></div>
                         <span className="input-label-span residence-details-span">Country*</span>
-                        <InputField type="text" value="" name="month" placeholder=""
+                        <InputField type="text" defaultValue="" name="month" placeholder=""
                             className="form-input profile-input"
                         />
                     </div>

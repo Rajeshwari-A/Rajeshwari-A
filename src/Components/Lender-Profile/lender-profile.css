@@ -208,6 +208,10 @@ h2 {
         font-weight: 600;
     }
     
+    .hide-link {
+        display: none;
+    }
+
     .section-details {
         display: grid;
         grid-column: 1/3;

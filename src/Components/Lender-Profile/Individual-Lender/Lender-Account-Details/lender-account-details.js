@@ -10,20 +10,20 @@ const ILenderAccountDetails = () => {
 
     return (
         <React.Fragment>
-            <LenderProfile btnEnable={true}>
+            <LenderProfile btnEnable={false} displayBtn={true} nxtNavPageID={5}>
                 <section className="account-details-section">
                     <h2 className="account-details-subheader">Account Details</h2>
                     <div className="account-details-wrapper">
                         <div className="account-block">
                             <span className="input-label-span input-text-span">Do you have a Chase/Wells-Fargo Account?</span>
-                            <InputField type="radio" value="" name="radio-yes" placeholder=""
+                            <InputField type="radio" defaultValue="" name="radio-yes" placeholder=""
                                 className="form-input profile-input input-radio-1" id="radio-yes"
                             />
-                            <span className="radio-span radio-span-1" for="radio_yes">Yes</span>
-                            <InputField type="radio" value="" name="radio-no" placeholder=""
+                            <span className="radio-span radio-span-1" htmlFor="radio_yes">Yes</span>
+                            <InputField type="radio" defaultValue="" name="radio-no" placeholder=""
                                 className="form-input profile-input input-radio-2" id="radio-no"
                             />
-                            <span className="radio-span radio-span-2" for="radio_no">No</span>
+                            <span className="radio-span radio-span-2" htmlFor="radio_no">No</span>
                         </div>
                         <div className="wells-fargo-details-block">
                             <p className="table-sub-header">Fill in all the required fields</p>
@@ -34,21 +34,21 @@ const ILenderAccountDetails = () => {
                                 </div>
                                 <div className="account-holder-details">
                                     <span className="input-label-span accounts-span">Account name*</span>
-                                    <InputField type="text" value="" name="account-name" placeholder=""
+                                    <InputField type="text" defaultValue="" name="account-name" placeholder=""
                                         className="form-input profile-input account-name" id="account-name"
                                     />
                                     <span className="input-label-span accounts-span right-align">Account number*</span>
-                                    <InputField type="text" value="" name="account-no" placeholder=""
+                                    <InputField type="text" defaultValue="" name="account-no" placeholder=""
                                         className="form-input profile-input account-number" id="account-no"
                                     />
                                 </div>
                                 <div className="account-type-details">
                                     <span className="input-label-span accounts-type-span">Account Type*</span>
-                                    <InputField type="text" value="" name="account-type" placeholder=""
+                                    <InputField type="text" defaultValue="" name="account-type" placeholder=""
                                         className="form-input profile-input account-type-input" id="account-type"
                                     />
                                     <span className="input-label-span routing-number-span right-align">Routing Number*</span>
-                                    <InputField type="text" value="" name="routing-num" placeholder=""
+                                    <InputField type="text" defaultValue="" name="routing-num" placeholder=""
                                         className="form-input profile-input" id="routing-num"
                                     />
                                 </div>

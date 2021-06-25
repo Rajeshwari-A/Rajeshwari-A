@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 // import Button from '../../../FormFields/Button/button';
 // import InputField from '../../../FormFields/Input/formInput';
+import {navlinksData} from '../../../Asserts/JSON-Data/lender-profile-menu-data.json'
 import LenderDetails from './ILender-Details/lender-details';
 import LenderProfile from '../lender-profile';
 import '../lender-profile.css';
@@ -18,7 +19,7 @@ const ILenderDetailsContainer = () => {
 
     return (
         <React.Fragment>
-            <LenderProfile btnEnable={true}>
+            <LenderProfile displayBtn={true} btnEnable={false} nxtNavPageID={1}>
                 <div className="profile-details-container">
                     <div className="profile-subheader-wrapper">
                         <h2 className="sub-header">Individual Details</h2>

@@ -2,12 +2,12 @@ import React from 'react';
 import './button.css';
 
 
-const Button = ({onClick, className, name, type, disabled}) => {
+const Button = ({handleClick, className, name, type, disabled}) => {
 
-    const handleClick = (e) => {
-        const { value } = e.target;
-        // onChange(value);
-    }
+    // const handleClick = (e) => {
+    //     const { value } = e.target;
+    //     // onChange(value);
+    // }
 
     return (
         <React.Fragment>

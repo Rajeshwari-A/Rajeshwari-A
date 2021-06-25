@@ -17,7 +17,7 @@ const IBeneficiaryDetailsContainer = () => {
 
     return (
         <React.Fragment>
-            <LenderProfile btnEnable={true}>
+            <LenderProfile btnEnable={false} displayBtn={true} nxtNavPageID={4}>
                 <div className="beneficiary-details-container">
                     <div className="container-subheader-wrapper">
                         <h2 className="sub-header">Beneficiary Details</h2>

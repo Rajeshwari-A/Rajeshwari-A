@@ -11,7 +11,6 @@ const ILenderDetails = () => {
 
     return (
         <React.Fragment>
-            {/* <LenderProfile btnEnable={true}> */}
                 <section className="lender-details-section">
                     {/* <div className="profile-subheader-wrapper">
                         <h2 className="sub-header">Individual Details</h2>
@@ -19,8 +18,8 @@ const ILenderDetails = () => {
                     <div className="lender-details-block">
                         <div className="lender-name-block">
                             <span className="input-label-span lender-name-label">Full Legal Name</span>
-                            <InputField type="text" value="" name="firstname" placeholder="First" className="form-input firstname" />
-                            <InputField type="text" value="" name="lastname" placeholder="Last"
+                            <InputField type="text" defaultValue="" name="firstname" placeholder="First" className="form-input firstname" />
+                            <InputField type="text" defaultValue="" name="lastname" placeholder="Last"
                                 className="form-input lastname"
                             />
                         </div>
@@ -28,27 +27,27 @@ const ILenderDetails = () => {
                             <span className="input-label-span lender-dob-label">Date of Birth</span>
                             <select className="form-select select-month"></select>
                             <span className="char-span"> / </span>
-                            <InputField type="text" value="" name="month" placeholder=""
+                            <InputField type="text" defaultValue="" name="month" placeholder=""
                                 className="form-input profile-input"
                             />
                             <span className="char-span"> / </span>
                             <InputField
-                                type="text" value="" name="year"
+                                type="text" defaultValue="" name="year"
                                 placeholder=""
                                 className="form-input profile-input"
                             />
                         </div>
                         <div className="lender-id-block">
                             <span className="input-label-span lender-id-span">SSN</span>
-                            <InputField type="text" value="" name="ssn-id-1" placeholder=""
+                            <InputField type="text" defaultValue="" name="ssn-id-1" placeholder=""
                                 className="form-input profile-input"
                             />
                             <span className="char-span"> - </span>
-                            <InputField type="text" value="" name="ssn-id-2" placeholder=""
+                            <InputField type="text" defaultValue="" name="ssn-id-2" placeholder=""
                                 className="form-input profile-input"
                             />
                             <span className="char-span"> - </span>
-                            <InputField type="text" value="" name="ssn-id-3" placeholder=""
+                            <InputField type="text" defaultValue="" name="ssn-id-3" placeholder=""
                                 className="form-input profile-input"
                             />
                         </div>
@@ -70,7 +69,7 @@ const ILenderDetails = () => {
                             <span className="text-span content-span">Select Document</span>
                             <div className="upload-file">
                                 <div className="file-upload-span">
-                                    <label className="upload-label" for="upload">Choose</label>
+                                    <label className="upload-label" htmlFor="upload">Choose</label>
                                     <input id="upload" type="file" />
                                 </div>
 
@@ -92,7 +91,6 @@ const ILenderDetails = () => {
                             }
                         </div> */}
                 </section>
-            {/* </LenderProfile> */}
         </React.Fragment>
     );
 }

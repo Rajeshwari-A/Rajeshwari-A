@@ -7,17 +7,51 @@ import LenderProfileType from './Lender-Profile-type/lender-profile-type';
 import Button from '../FormFields/Button/button';
 
 
-const LenderProfile = ({ children, btnEnable }) => {
-    // console.log("menuData", menuData);
+const LenderProfile = ({ children, displayBtn, btnEnable, nxtNavPageID }) => {
+    console.log("menuData", btnEnable);
     const history = useHistory();
     const [currentTab, setCurrentTab] = useState(0);
+    const [currentPageID, setCurrentPageID] = useState();
 
     const handleTabNavigation = (index) => {
-        console.log("index", index);
-        let navPath = "/create-profile" + "/" + navlinksData[index]
+        console.log("index", index, nxtNavPageID);
+        let navPath = "/create-profile" + "/" + navlinksData[`${index + 1}`]
         history.push(`${navPath}`)
-        setCurrentTab(index);
-        
+        // setCurrentTab(index);
+    }
+
+    const handleNxtPageNavigation = () => {
+        switch (nxtNavPageID) {
+            case 0:
+                history.push('/create-profile/lender-details');
+                break;
+            case 1:
+                history.push('/create-profile/residence-details');
+                break;
+            case 2:
+                history.push('/create-profile/contact-details');
+                break;
+            case 3:
+                history.push('/create-profile/beneficiary-details');
+                break;
+            case 4:
+                history.push('/create-profile/account-details');
+                break;
+            case 5:
+                history.push('/create-profile/add-comments');
+                break;
+
+            default:
+                history.push('/create-profile/add-comments');
+                break;
+
+            // case 7 :
+            // return '/create-profile/lender-details'
+            // case 8 :
+            // return '/create-profile/lender-details'
+        }
+        // setCurrentPageID(nxtNavPageID - 1)
+
     }
 
     return (
@@ -26,46 +60,25 @@ const LenderProfile = ({ children, btnEnable }) => {
                 <ul className="lender-profile-menu">
                     {
                         Object.values(menuData).map((name, index) => {
+                            console.log("inde------", typeof index,index,  typeof nxtNavPageID, nxtNavPageID);
                             return (
                                 <React.Fragment key={index}>
-                                    <li className="menu-item" onClick={() => handleTabNavigation(index + 1)} ><div className="profile-link"><p>{index + 1}</p><p className="class-dot">.</p><p className="menu-span-link">{name}</p></div></li>
+                                    <li className={`menu-item ${nxtNavPageID == `${index + 1}` ? "menu-item-active" : ""}`} onClick={() => handleTabNavigation(index)} ><div className="profile-link"><p>{index + 1}</p><p className="class-dot">.</p><p className={`menu-span-link ${nxtNavPageID == `${index + 1}` ? "" : "hide-link"}`}>{name}</p></div></li>
                                     <p className="line-link"></p>
                                 </React.Fragment>
                             )
                         })
                     }
-                    {/* <li className="menu-item menu-item-active"><Link className="profile-link active-link"><p>1</p><p className="class-dot">.</p><p className="menu-span-link active-link">Profile Details</p></Link></li>
-                    <p className="line-link"></p>
-                    <li className="menu-item"><Link to="create-profile/lender-details" className="profile-link"><p>2</p><p className="class-dot">.</p><p className="menu-span-link">Residence Details</p></Link></li>
-                    <p className="line-link"></p>
-
-                    <li className="menu-item"><Link className="profile-link"><p>3</p><p className="class-dot">.</p><p className="menu-span-link">Contact Details</p></Link></li>
-                    <p className="line-link"></p>
-                    <li className="menu-item"><Link className="profile-link"><p>4</p><p className="class-dot">.</p><p className="menu-span-link">Beneficiary Details</p></Link></li>
-                    <p className="line-link"></p>
-                    <li className="menu-item"><Link className="profile-link"><p>5</p><p className="class-dot">.</p><p className="menu-span-link">Account Details</p></Link></li>
-                    <p className="line-link"></p>
-                    <li className="menu-item"><Link className="profile-link"><p>6</p><p className="class-dot">.</p><p className="menu-span-link">Add Comments</p></Link></li>
-                    <p className="line-link"></p>
-                    <li className="menu-item"><Link className="profile-link"><p>7</p><p className="class-dot">.</p><p className="menu-span-link">Review Profile</p></Link></li>
-                    <p className="line-link"></p>
-                    <li className="menu-item"><Link className="profile-link"><p>8</p><p className="class-dot">.</p><p className="menu-span-link">Sign and Submit Profile</p></Link></li> */}
                 </ul>
                 <h2 className="profile-header">Create your Lender Profile</h2>
                 <section className="section-details">
-                    {/* <div className="data-wrapper content-block"> */}
                     {children}
-                    {/* { btnEnable &&  */}
-                    <div className={`next-btn-wrapper ${btnEnable ? '' : 'btn-hidden'}`} >
-                        <Button className="button btn-primary btn-next" name="Next"></Button>
+                    <div className={`next-btn-wrapper ${displayBtn === false ? 'btn-hidden' : ''}`} >
+                        <Button className={`button btn-primary btn-next ${btnEnable ? '' : 'btn-disabled'}`} name="Next" handleClick={handleNxtPageNavigation}></Button>
                         <i className="arrow right"></i>
                     </div>
-                    {/* } */}
-                    {/* </div> */}
                 </section>
-            </div>
-
-        </React.Fragment>
+            </div>      </React.Fragment>
     );
 }
 
