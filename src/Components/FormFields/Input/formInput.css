@@ -16,6 +16,8 @@ input::-ms-reveal,
     height: 40px;
     margin: 10px 0px 30px 0px;
     display: block;
+    text-indent: 10px;
+
 }
 
 .form-input:focus::after {
@@ -58,7 +60,8 @@ input::-ms-reveal,
   ::placeholder {
     color: #BABABA;
     font-size: 1em;
-    padding-left: 5%;
+    text-indent: 10px;
+    /* padding-left: 5%; */
   }
 
   /* input[type='radio'] {

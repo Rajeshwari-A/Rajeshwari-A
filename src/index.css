@@ -32,6 +32,14 @@ code {
     monospace;
 }
 
+.form-select {
+  border: 1px solid #116FDC57;
+  background-color: #ffffff;
+  height: 40px;
+  text-indent: 10px;
+    font-size: 0.8em;
+}
+
 .form-select:focus {
   outline: none;
   border: 1px solid #116FDC;

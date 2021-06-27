@@ -45,6 +45,12 @@ h2 {
     background: #116FDC;
 }
 
+.checkCircle {
+    margin: auto 10% auto auto;
+    width: 10%;
+    /* height: 18px; */
+}
+
 .section-details {
     /* grid-row: 2/3; */
     display: grid;
@@ -57,16 +63,16 @@ h2 {
     grid-auto-rows: minmax(75px, auto) minmax(75px, 10%);
 }
 
-.form-select {
+/* .form-select {
     border: 1px solid #116FDC57;
     background-color: #ffffff;
-    height: 40px;
+    height: 40px; */
     /* -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none; */
   /* background: transparent url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") no-repeat 60px center; */
 
-}
+/* } */
 
 
 .profile-link {
@@ -76,11 +82,11 @@ h2 {
 
 /* .profile-link-active {
     color: #ffffff;
-}
+} */
 
 .menu-span-link-active {
     color: #ffffff;
-} */
+} 
 
 .active-link {
     color: #ffffff;
@@ -219,8 +225,8 @@ h2 {
 
     }
     .next-btn-wrapper {
-        bottom: 1.5%;
-        margin-top: 0px;
+        bottom: 20%;
+        /* margin-top: 0px; */
     }
     .btn-next {
         margin: auto;

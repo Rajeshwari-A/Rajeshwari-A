@@ -31,7 +31,7 @@ const LenderProfileType = () => {
 
     return (
         <React.Fragment>
-            <LenderProfile displayBtn={isGroupAvatarActive || isIndividualAvatarActive} nxtNavPageID={0}>
+            <LenderProfile displayBtn={isGroupAvatarActive || isIndividualAvatarActive} btnEnable={true} nxtNavPageID={0}>
                 {/* <div className="data-wrapper"> */}
                 <section className="lender-type-section">
                     <div className="subheader-text">I am a</div>

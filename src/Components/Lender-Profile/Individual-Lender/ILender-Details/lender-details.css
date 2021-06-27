@@ -82,17 +82,6 @@
     text-align: left;
 }
 
-.form-select {
-    border: 1px solid #116FDC57;
-    background-color: #ffffff;
-    height: 40px;
-    /* -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none; */
-  /* background: transparent url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") no-repeat 60px center; */
-
-}
-
 .profile-input {
     margin: auto;
 }
