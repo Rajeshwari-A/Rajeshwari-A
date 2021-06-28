@@ -58,6 +58,23 @@
     position: relative;
 }
 
+.errorBlock {
+    background-color: rgb(255, 0, 0);
+    /* height: 109%; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    padding: 3%;
+    margin: 5% auto;
+    /* width:max-content; */
+}
+
+.errorSpan {
+    color: #ffffff;
+}
+
 @media screen and (max-width: 480px) {
     .bridging-image-container {
         width: 100%;

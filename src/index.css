@@ -45,6 +45,9 @@ code {
   border: 1px solid #116FDC;
 }
 
+.errorSpan {
+  color: red;
+}
 
 @media screen and (max-width: 480px) {
   span {

@@ -62,7 +62,7 @@ const LenderProfile = ({ children, displayBtn, btnEnable, nxtNavPageID }) => {
                 <ul className="lender-profile-menu">
                     {
                         Object.values(menuData).map((name, index) => {
-                            console.log("inde------", typeof index, index, typeof nxtNavPageID, nxtNavPageID);
+                            // console.log("inde------", typeof index, index, typeof nxtNavPageID, nxtNavPageID);
                             return (
                                 <React.Fragment key={index}>
                                     <li className={`menu-item ${nxtNavPageID == `${index + 1}` ? "menu-item-active" : ""}`} onClick={() => handleTabNavigation(index)} ><div className="profile-link"><p>{index + 1}</p><p className="class-dot">.</p><p className={`menu-span-link ${nxtNavPageID == `${index + 1}` ? "" : "hide-link"}`}>{name}</p></div>
@@ -77,9 +77,10 @@ const LenderProfile = ({ children, displayBtn, btnEnable, nxtNavPageID }) => {
                 <h2 className="profile-header">Create your Lender Profile</h2>
                 <section className="section-details">
                     {children}
-                    <div className={`next-btn-wrapper ${displayBtn === false ? 'btn-hidden' : ''}`} >
+                    <div className={`next-btn-wrapper btn-tooltip ${displayBtn === false ? 'btn-hidden' : ''}`} >
                         <Button className={`button btn-primary btn-next ${btnEnable ? '' : 'btn-disabled'}`} name="Next" handleClick={handleNxtPageNavigation}></Button>
                         <i className="arrow right"></i>
+                        <span className="disabled-btn-tooltip">Fill all the mandetory fields to enable the button</span>
                     </div>
                 </section>
             </div>      </React.Fragment>

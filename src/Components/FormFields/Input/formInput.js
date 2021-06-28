@@ -2,7 +2,7 @@ import React from 'react';
 import './formInput.css';
 
 
-const InputField = ({ id, value, label, name, placeholder, type, className, onChange, maxLength, ref }) => {
+const InputField = ({ id, value, label, name, placeholder, type, className, onChange, maxLength, ref, error }) => {
 
     const handleChange = (e) => {
         const { value } = e.target;
@@ -18,7 +18,7 @@ const InputField = ({ id, value, label, name, placeholder, type, className, onCh
                 type={type}
                 value={value}
                 name={name}
-                className={`${className ? className : type === 'checkbox' ? 'form-checkbox' : 'form-input'}`}
+                className={`${type === 'checkbox' ? 'form-checkbox' : `form-input ${className}`}`}
                 placeholder={placeholder}
                 onChange={handleChange}
                 autoFocus=""

@@ -98,7 +98,7 @@ h2 {
 }
 
 .next-btn-wrapper {
-    position: inherit;
+    position: relative;
     width: 100%;
     right: 3%;
     bottom: 5%;
@@ -109,6 +109,22 @@ h2 {
 
 .btn-hidden {
     visibility: hidden;
+}
+
+.disabled-btn-tooltip {
+    display: none;
+}
+
+.btn-tooltip .disabled-btn-tooltip {
+    position: absolute;
+    color: rgb(255, 0, 0);
+    font-size: 0.8em;
+    top: -75%;
+    /* display: block; */
+}
+
+.btn-tooltip:hover .disabled-btn-tooltip {
+    display: block;
 }
 
 .arrow {
@@ -227,6 +243,7 @@ h2 {
     .next-btn-wrapper {
         bottom: 20%;
         /* margin-top: 0px; */
+        justify-content: center;
     }
     .btn-next {
         margin: auto;
@@ -258,6 +275,10 @@ h2 {
         /* background: #116FDC; */
         background: #CCCCCC;;
         position: absolute;
+    }
+
+    .btn-tooltip:hover .disabled-btn-tooltip {
+        display: none;
     }
 }
 

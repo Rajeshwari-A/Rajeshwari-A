@@ -1,33 +1,11 @@
-// import firebase from 'firebase';
+import firebase  from 'firebase/app';
+import 'firebase/auth';
+// import './'
+console.log("process.env", process.env)
 
-//   var firebaseConfig = {
-//     apiKey: "AIzaSyCuUlFlNKhAG2gcMZjmUAlVmrNYOkTAnrk",
-//     // authDomain: "bridge-fund-qa.firebaseapp.com",
-//     // projectId: "bridge-fund-qa",
-//     // storageBucket: "bridge-fund-qa.appspot.com",
-//     // messagingSenderId: "420858885597",
-//     // appId: "1:420858885597:web:c1c50846fcebf78b587234",
-//     // measurementId: "G-F0FT4GT4QW"
-//   };
-//   // Initialize Firebase
-//   const fire = firebase.initializeApp(firebaseConfig);
-// //   firebase.analytics();
-// export default fire;
+const fire = firebase.initializeApp({
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+})
 
-
-import app from 'firebase/app';
-import FirebaseContext from './context';
-import "firebase/auth";
-const config = {
-  apiKey: process.env.REACT_APP_API_KEY,
-};
-class Firebase {
-  constructor() {
-    app.initializeApp(config);
-    this.auth = app.auth();
-  }
-    // doSignInWithEmailAndPassword = async(email, password) =>  await this.auth.signInWithEmailAndPassword(email, password);
-    // doCreateUserWithEmailAndPassword= async(email, password) =>  await this.auth.createUserWithEmailAndPassword(email, password);
-}
-export default Firebase;
-export { FirebaseContext };
+export const auth = firebase.auth();
+export default fire;

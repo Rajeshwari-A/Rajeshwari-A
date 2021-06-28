@@ -15,11 +15,30 @@ import ILenderContactDetails from './Components/Lender-Profile/Individual-Lender
 import IBeneficiaryDetails from './Components/Lender-Profile/Individual-Lender/Beneficiary-Details/beneficiary-details-container';
 import ILenderAccountDetails from './Components/Lender-Profile/Individual-Lender/Lender-Account-Details/lender-account-details';
 import IAddComments from "./Components/Lender-Profile/Individual-Lender/Add-Comments/add-comments";
+import {auth} from "./Firebase/fire";
 
 
 import { isLenderProfilePage } from './Utlis/utlis';
+import { useEffect, useState } from "react";
 
 function App() {
+const [user, setUser] = useState();
+
+useEffect(() => {
+  // authListner();
+})
+
+  // const authListner = () => {
+  //   auth.authStateChanges((user) => {
+  //     console.log("user--", user);
+  //     if(user) {
+  //       setUser(user);
+  //     } else {
+  //       setUser(null);
+  //     }
+  //   })
+  // }
+
   return (
     <div>
       <Router>
