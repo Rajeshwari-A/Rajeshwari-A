@@ -20,10 +20,6 @@ const Login = () => {
 
 
     const handleLogin = () => {
-        // console.log("loginData-------", loginData)
-        // if() {
-
-        // }
         auth.signInWithEmailAndPassword(loginData.email, loginData.password).then((u)=> {
             console.log("logged in---", u);
             history.push("/create-profile")
@@ -34,7 +30,7 @@ const Login = () => {
             } else if(!loginData.password) {
                 setErrorMsg("Please Enter Password");
             } else {
-                setErrorMsg(error.message);
+                setErrorMsg("You have entered an invalid username or password");
             }
 
         })

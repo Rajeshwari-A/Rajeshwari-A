@@ -277,6 +277,11 @@ h2 {
         position: absolute;
     }
 
+    .line-link:last-child::after {
+        /* width: 0px; */
+        display: none;
+    }
+
     .btn-tooltip:hover .disabled-btn-tooltip {
         display: none;
     }

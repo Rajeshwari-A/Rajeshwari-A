@@ -8,7 +8,7 @@ const ILenderContactDetails = () => {
 
     return (
         <React.Fragment>
-            <LenderProfile btnEnable={false} displayBtn={true} nxtNavPageID={3}>
+            <LenderProfile btnEnable={false} displayBtn={true} navPageID={3}>
                 <section className="contact-details-section">
                     <h2 className="contact-details-subheader">Contact Details</h2>
                     <div className="contact-details-wrapper">

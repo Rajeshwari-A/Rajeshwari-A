@@ -1,0 +1,29 @@
+.create-lender-form {
+    float: right;
+    width: 35%;
+    text-align:left;
+}
+
+.create-btn-next {
+    width: 50%;
+}
+
+.login-link {
+    text-align: center;
+    letter-spacing: 0px;
+}
+
+.login-link a{
+    color: #116FDC;
+    font-weight: 700;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .create-lender-form {
+        float:none;
+        width: auto;
+        margin: 10%;
+    }
+  }

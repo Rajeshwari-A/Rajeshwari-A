@@ -1,12 +1,13 @@
 import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 import PublicRoute from "./Components/Routes/publicRoute";
 import Login from './Components/Login/login';
+import CreateAccount from "./Components/Create-Account/create-account";
 import ForgotPassword from './Components/Forgot-Password/forgot-password';
 import VerifyCode_ForgotPassword from './Components/Forgot-Password/verify-code-forgot-password';
 import CreateNewPassword from "./Components/Forgot-Password/create-new-password";
 import EmailNotification from './Components/Forgot-Password/email-notification-page';
 import PasswordNotification from './Components/Forgot-Password/password-notification';
-import CreateAccount from './Components/Create-Account/create-account';
+// import CreateAccount from './Components/Create-Account/create-account-container';
 import LenderProfileType from './Components/Lender-Profile/Lender-Profile-type/lender-Profile-type';
 // import ILenderDetails from './Components/Lender-Profile/Individual-Lender/ILender-Details/lender-details';
 import IlenderDetailsContainer from './Components/Lender-Profile/Individual-Lender/lender-details-container';

@@ -12,7 +12,7 @@ const IAddComments = () => {
 
     return (
         <React.Fragment>
-            <LenderProfile btnEnable={false} displayBtn={true} nxtNavPageID={6}>
+            <LenderProfile btnEnable={false} displayBtn={true} navPageID={6}>
                 <section className="add-comments-section">
                     <h2 className="add-comments-subheader">Add Comments/Instructions</h2>
                     <div className="add-comments-wrapper">

@@ -228,6 +228,10 @@ input[type="file"] {
         margin: auto 4%;
     }
 
+    .input-label-span {
+        margin-left: 5%;
+    }
+
     .lender-name-block {
         /* display: block; */
         grid-template-columns: 1fr;

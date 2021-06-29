@@ -8,7 +8,7 @@ const LenderResidenceDetails = () => {
 
     return (
         <React.Fragment>
-            <LenderProfile btnEnable={false} displayBtn={true} nxtNavPageID={2}>
+            <LenderProfile btnEnable={false} displayBtn={true} navPageID={2}>
                 <section className="residence-details-wrapper">
                     <h2 className="residence-details-subheader">Residence Details</h2>
                     <div className="address-block address-line-1">

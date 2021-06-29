@@ -10,7 +10,7 @@ const ILenderAccountDetails = () => {
 
     return (
         <React.Fragment>
-            <LenderProfile btnEnable={false} displayBtn={true} nxtNavPageID={5}>
+            <LenderProfile btnEnable={false} displayBtn={true} navPageID={5}>
                 <section className="account-details-section">
                     <h2 className="account-details-subheader">Account Details</h2>
                     <div className="account-details-wrapper">

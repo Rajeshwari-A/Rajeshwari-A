@@ -8,10 +8,12 @@ import LenderProfile from '../lender-profile';
 import '../lender-profile.css';
 import './ILender-Details/lender-details';
 import './lender-details-container.css'
+import { LenderContext } from '../lender-profile'
 
 
 
 const ILenderDetailsContainer = () => {
+    console.log("LenderContext", LenderContext.lenderType)
     const [showNomineeBlock, setNomineeBlock] = useState(false);
 
     const displayNomineeBlock = () => {
@@ -20,7 +22,7 @@ const ILenderDetailsContainer = () => {
 
     return (
         <React.Fragment>
-            <LenderProfile displayBtn={true} btnEnable={false} nxtNavPageID={1}>
+            <LenderProfile displayBtn={true} btnEnable={false} navPageID={1}>
                 <div className="profile-details-container">
                     <div className="profile-subheader-wrapper">
                         <h2 className="sub-header">Individual Details</h2>
