@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../Lender-Profile/lender-profile.css';
-import './create-account.css';
+import './Create-Account/create-account.css';
 
 // import checkCircle from '../../Asserts/Icon-check-circle.svg';
 import Button from '../FormFields/Button/button';

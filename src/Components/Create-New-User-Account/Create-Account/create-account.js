@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 // import { Link } from "react-router-dom";
-import CreateAccountContainer from './create-account-container';
-import InputField from '../FormFields/Input/formInput';
+import CreateAccountContainer from '../create-new-account-container';
+import InputField from '../../FormFields/Input/formInput';
 // import Button from '../FormFields/Button/button';
 import './create-account.css';
-import '../Login/login.css'
+// import '../Login/login.css'
 
 const CreateAccount = () => {
     return (

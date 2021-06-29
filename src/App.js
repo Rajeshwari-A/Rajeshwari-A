@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 import PublicRoute from "./Components/Routes/publicRoute";
 import Login from './Components/Login/login';
-import CreateAccount from "./Components/Create-Account/create-account";
+import CreateAccount from "./Components/Create-New-User-Account/Create-Account/create-account";
+import TersmAndConditions from "./Components/Create-New-User-Account/Terms&Conditions/terms-and-conditions";
 import ForgotPassword from './Components/Forgot-Password/forgot-password';
 import VerifyCode_ForgotPassword from './Components/Forgot-Password/verify-code-forgot-password';
 import CreateNewPassword from "./Components/Forgot-Password/create-new-password";
@@ -51,6 +52,7 @@ useEffect(() => {
           <PublicRoute restricted={false} path="/forgot-password/password-notification" exact component={PasswordNotification} />
           <PublicRoute restricted={false} path="/forgot-password/create-password" exact component={CreateNewPassword} />
           <PublicRoute restricted={false} path="/create-account" exact component={CreateAccount} />
+          <PublicRoute restricted={false} path="/create-account/tc" exact component={TersmAndConditions} />
           <PublicRoute restricted={false} path="/create-profile" exact component={LenderProfileType} />
           <PublicRoute restricted={false} path="/create-profile/lender-details" exact component={IlenderDetailsContainer} />
           <PublicRoute restricted={false} path="/create-profile/residence-details" exact component={IlenderResidenceDetails} />
