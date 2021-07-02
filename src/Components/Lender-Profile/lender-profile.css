@@ -38,11 +38,12 @@ h2 {
     align-items: center;
     font-size: 12px;
     cursor: pointer;
-    padding-left: 10%;
+    padding-left: 6%;
 }
 
 .menu-item-active {
     background: #116FDC;
+    color: #ffffff;
 }
 
 .checkCircle {
