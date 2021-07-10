@@ -18,6 +18,10 @@
     grid-row-gap: 20px;
 }
 
+/* .add-nominee-btn-wrapper {
+    margin-top: 10%;
+} */
+
 .beneficiary-details-block {
     display: grid;
     align-items: center;
@@ -101,6 +105,8 @@
         margin: 0 4%;
         margin-bottom: 3%;
     }
+
+    
 
     .ssn-span {
         grid-row: 1/2;

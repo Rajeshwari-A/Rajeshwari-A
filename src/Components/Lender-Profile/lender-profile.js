@@ -1,50 +1,93 @@
 import React, { useState, createContext, useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router';
 import { Link } from "react-router-dom";
 import './lender-profile.css';
+import * as actionTypes from "../../Redux/types"
 import checkCircle from '../../Asserts/Icon-check-circle.svg';
 import { menuData, navlinksData } from "../../Asserts/JSON-Data/lender-profile-menu-data.json";
 import LenderProfileType from './Lender-Profile-type/lender-Profile-type';
 import Button from '../FormFields/Button/button';
 const LenderContext = createContext();
 
-const LenderProfile = ({ children, displayBtn, btnEnable, navPageID, lenderType}) => {
-    console.log("menuData", btnEnable);
+const LenderProfile = ({ children, displayBtn, btnEnable, navPageID, lenderType, data}) => {
     const history = useHistory();
     const [currentTab, setCurrentTab] = useState(0);
     const [currentPageID, setCurrentPageID] = useState();
-    const [isDataEntered, setDataEntered] = useState(false)
+    const [isDataEntered, setDataEntered] = useState(false);
+    const dispatch = useDispatch();
 
     const handleTabNavigation = (index) => {
-        console.log("index", index, navPageID);
         let navPath = "/create-profile" + "/" + navlinksData[`${index + 1}`]
         history.push(`${navPath}`)
         // setCurrentTab(index);
     }
 
     useEffect(() => {
-        console.log("val updated--", lenderType)
-    }, [lenderType])
+        dispatch({
+            type: actionTypes.INIT_GET_LENDER_PROFILE_DETAILS,
+            pageID: navPageID
+        });
+      }, [])
 
-    const handleNxtPageNavigation = () => {
+
+    const saveLenderData = (navLink, lenderData) => {
+        console.log("data---------", lenderData)
+        if(navPageID === 0) {
+            dispatch({
+                type: actionTypes.INITIATE_SAVE_LENDER_PROFILE_DETAILS,
+                lenderData: lenderData,
+                history,
+                navLink
+            });
+        }
+
+        else {
+            dispatch({
+                type: actionTypes.UPDATE_LENDER_PROFILE_DETAILS,
+                lenderData: lenderData,
+                pageID: navPageID,
+                history,
+                navLink
+            });
+        }
+       
+        // history.push(navLink);
+
+    }
+
+    const handleNxtPageNavigation = async() => {
         switch (navPageID) {
             case 0:
-                history.push('/create-profile/lender-details');
+                await saveLenderData('/create-profile/lender-details', data);
                 break;
             case 1:
-                history.push('/create-profile/residence-details');
+                await saveLenderData('/create-profile/residence-details', data.lenderData)
+                // history.push('/create-profile/residence-details');
                 break;
             case 2:
-                history.push('/create-profile/contact-details');
+                // history.push('/create-profile/contact-details');
+                await saveLenderData('/create-profile/contact-details', data)
                 break;
             case 3:
-                history.push('/create-profile/beneficiary-details');
+                await saveLenderData('/create-profile/beneficiary-details', data)
+                // history.push('/create-profile/beneficiary-details');
                 break;
             case 4:
-                history.push('/create-profile/account-details');
+                // history.push('/create-profile/account-details');
+                await saveLenderData('/create-profile/account-details', data)
                 break;
             case 5:
-                history.push('/create-profile/add-comments');
+                // history.push('/create-profile/add-comments');
+                // break;
+
+                await saveLenderData('/create-profile/add-comments', data)
+                break;
+                case 6:
+                // history.push('/create-profile/add-comments');
+                // break;
+
+                await saveLenderData('/create-profile/review-profile', data)
                 break;
 
             default:
@@ -87,7 +130,7 @@ const LenderProfile = ({ children, displayBtn, btnEnable, navPageID, lenderType}
                     <div className={`next-btn-wrapper btn-tooltip ${displayBtn === false ? 'btn-hidden' : ''}`} >
                         <Button className={`button btn-primary btn-next ${btnEnable ? '' : 'btn-disabled'}`} name="Next" handleClick={handleNxtPageNavigation}></Button>
                         <i className="arrow right"></i>
-                        <span className="disabled-btn-tooltip">Fill all the mandetory fields to enable the button</span>
+                        {!btnEnable && <span className="disabled-btn-tooltip">Fill all the mandetory fields to enable the button</span>}
                     </div>
                 </section>
             </div>

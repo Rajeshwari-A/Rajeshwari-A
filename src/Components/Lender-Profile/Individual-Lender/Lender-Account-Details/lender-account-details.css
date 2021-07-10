@@ -41,6 +41,10 @@
     color: #797777;
 }
 
+.hide-wells-fargo-block {
+    display: none;
+}
+
 
 .wells-fargo-wrapper {
     display: grid;
@@ -58,13 +62,13 @@
 
 .account-holder-details {
     display: grid;
-    grid-template-columns: 14.5% 40% 15% 30%;
+    grid-template-columns: 14.5% 41% 14.5% 30.5%;
     align-items: center;
 }
 
 .account-type-details {
     display: grid;
-    grid-template-columns: 14.5% 40% 15% 30%;
+    grid-template-columns: 15.3% 39% 15.5% 30.5%;
     align-items: center;
 }
 
@@ -81,6 +85,11 @@
 .right-align {
     /* margin-left: 5%; */
     text-align: end;
+}
+
+.routing-number-span {
+    /* margin-left: 5%; */
+    margin: 2% 3%;
 }
 
 @media screen and (max-width: 480px) {
@@ -143,7 +152,6 @@
         /* margin: auto 5%; */
     }
 
-
     .accounts-span {
         margin: 0px;
         text-align: left;
@@ -198,6 +206,14 @@
         grid-row: 3/4;
         margin-left: 5%;
         text-align: left;
+    }
+
+    .routing-input{
+        grid-row: 4/5;
+    }
+
+    .lender-account-select {
+        margin: 0px 9px;
     }
 
 }

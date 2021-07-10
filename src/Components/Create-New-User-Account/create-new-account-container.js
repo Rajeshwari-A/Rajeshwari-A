@@ -13,7 +13,7 @@ import Button from '../FormFields/Button/button';
 
 const CreateAccountContainer = ({ children, navPageID, btnEnable, btnName, data}) => {
     // const data = localStorage.getItem("formData")
-    // console.log("data----", data);
+    console.log("data----", btnEnable);
     
     const [accountData, setAccountData] = useState();
     const menuData = ["Create an Account", "Accept Terms and Conditions"];
@@ -78,7 +78,7 @@ const CreateAccountContainer = ({ children, navPageID, btnEnable, btnName, data}
                 <div className="create-account-btn-wrapper btn-toolti">
                     <Button className={`button btn-primary ${btnEnable ? '' : 'btn-disabled'}`} name={btnName} handleClick={handleNxtPageNavigation}></Button>
                     <i className="arrow right"></i>
-                    <span className="disabled-btn-tooltip">Fill all the mandetory fields to enable the button</span>
+                   {btnEnable  && <span className="disabled-btn-tooltip">Fill all the mandetory fields to enable the button</span>}
                 </div>
             </div>
         </React.Fragment>

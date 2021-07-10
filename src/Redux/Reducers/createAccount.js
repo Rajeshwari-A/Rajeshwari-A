@@ -9,7 +9,6 @@ const initialState = {
 function createAccount(state = initialState, action) {
     switch (action.type) {
         case type.SAVE_ACCOUNT_DETAILS_SUCCESS :
-            console.log("reducer---", action)
             return {
                 ...state,
                 accountData: action.payload

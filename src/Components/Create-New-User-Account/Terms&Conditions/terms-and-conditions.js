@@ -10,7 +10,6 @@ import './terms-and-conditions.css';
 
 const TersmAndConditions = () => {
     const savedAccountData = useSelector((state) =>  state.createAccount);
-    console.log("------accountData --- ",savedAccountData)
     return (
         <React.Fragment>
             <CreateAccountContainer navPageID={2} btnName="Create Account" btnEnable={true} data={savedAccountData}>

@@ -12,7 +12,7 @@ function* loginSaga(action) {
    }
 }
 
-export function* watchLoginSaga() {
+export default function* watchLoginSaga() {
     yield takeEvery( 'HANDLE_LOGIN', loginSaga);
 }
 

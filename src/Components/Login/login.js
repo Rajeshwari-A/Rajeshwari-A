@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router';
 import { Link } from "react-router-dom";
+import localforage from "localforage";
 import bridgingImg from '../../Asserts/bridging-Loan.png';
 import InputField from '../FormFields/Input/formInput';
 import Button from '../FormFields/Button/button';
@@ -20,11 +21,11 @@ const Login = () => {
 
 
     const handleLogin = () => {
-        auth.signInWithEmailAndPassword(loginData.email, loginData.password).then((u)=> {
-            console.log("logged in---", u);
+        auth.signInWithEmailAndPassword(loginData.email, loginData.password).then((res)=> {
+            localforage.setItem('authToken', res.user.Aa);
             history.push("/create-profile")
+
         }).catch((error) => {
-            console.log("error", error, error.code.indexOf('email'));
             if(error.code.indexOf('email') !== -1) {
                 setErrorMsg("Please Enter a Vaild Email Address");
             } else if(!loginData.password) {

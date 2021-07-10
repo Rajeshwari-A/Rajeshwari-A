@@ -45,8 +45,22 @@ code {
   border: 1px solid #116FDC;
 }
 
-.errorSpan {
-  color: red;
+.comments-block:focus {
+  outline: none;
+  /* border: 1px solid #116FDC; */
+}
+
+.error-span {
+  grid-column: 2/3;
+  margin-top: 4%;
+  color: rgb(255, 0, 0);
+  font-size: 0.8em;
+  text-align: center;
+  display: none;
+}
+
+.error {
+  display: block;
 }
 
 @media screen and (max-width: 480px) {
@@ -57,4 +71,7 @@ code {
   p {
     font-size: 0.8em;
   }
+  /* .error {
+    display: none;
+  } */
 }

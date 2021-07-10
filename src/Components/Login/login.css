@@ -58,6 +58,16 @@
     position: relative;
 }
 
+.login-link {
+    text-align: center;
+    letter-spacing: 0px;
+}
+
+.login-link a{
+    color: #116FDC;
+    font-weight: 700;
+}
+
 .errorBlock {
     background-color: rgb(255, 0, 0);
     /* height: 109%; */

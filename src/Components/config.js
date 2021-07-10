@@ -2,7 +2,8 @@ const dev = {
 
     apiGateway: {
       //   REGION: "YOUR_DEV_API_GATEWAY_REGION",
-      URL: `https://${window.location.hostname}/api/v1`,
+      // URL: `https://${window.location.hostname}/api/v1`,
+      URL: "https://w27f9j1lih.execute-api.us-west-2.amazonaws.com/api/"
     },
   };
   

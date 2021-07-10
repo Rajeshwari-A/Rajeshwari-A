@@ -44,11 +44,8 @@ const CreateAccount = () => {
             setFormData(prevState => ({ ...prevState, [name]: value }));
 
             if (validateEmail(value)) {
-                console.log("validated true")
                 setError(prevState => ({ ...prevState, inValidEmail: false }))
             } else if (!validateEmail(value)) {
-                console.log("validated false")
-
                 setError(prevState => ({ ...prevState, inValidEmail: true }))
             }
         }
@@ -78,7 +75,6 @@ const CreateAccount = () => {
         if (firstname && lastname && email && password && confirmPassword &&
              isAcknowledged && !error.inValidEmail && !error.noMatch) {
             setValidFormData(true);
-            console.log("saveAccountDetails", actions.saveAccountDetails, typeof actions.saveAccountDetails)
             // dispatch(actions.saveAccountDetails(formData))
             // localStorage.setItem("formData", formData);
             dispatch(actions.saveAccountDetails(formData))
@@ -104,7 +100,7 @@ const CreateAccount = () => {
                         <InputField type="text" defaultValue="" name="email" placeholder="Email"
                             className="profile-input" onChange={handleEmail}
                         />
-                        {inValidEmail && <span className="error-span">Please Enter a Vaild Email Address</span>}
+                        {inValidEmail && <span className={`error-span ${inValidEmail} error`}>Please Enter a Vaild Email Address</span>}
                     </div>
 
                     <div className="data-block password-block">

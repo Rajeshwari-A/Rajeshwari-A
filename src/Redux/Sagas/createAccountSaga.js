@@ -1,13 +1,13 @@
-import { call, put, takeaway, takeEvery } from 'redux-saga/effects';
-// import API from '../../API/api';
-import * as actions from "../Actions/index";
-import { type } from '../types';
+// import { call, put, takeaway, takeEvery } from 'redux-saga/effects';
+// // import API from '../../API/api';
+// import * as actions from "../Actions/index";
+// import { type } from '../types';
 
-function* saveAccountDeatilsSaga(action) {
-    yield put(actions.saveAccountDetails());
-}
+// function* saveAccountDeatilsSaga(action) {
+//     yield put(actions.saveAccountDetails());
+// }
 
-export function* watchSaveAccountDeatilsSaga() {
-    yield takeEvery( 'SAVE_ACCOUNT_DETAILS', saveAccountDeatilsSaga);
-}
+// export function* watchSaveAccountDeatilsSaga() {
+//     yield takeEvery( 'SAVE_ACCOUNT_DETAILS', saveAccountDeatilsSaga);
+// }
 

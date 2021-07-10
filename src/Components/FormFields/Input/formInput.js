@@ -2,7 +2,8 @@ import React from 'react';
 import './formInput.css';
 
 
-const InputField = ({ id, value, label, name, placeholder, type, className, onChange, onBlur, maxLength, ref, error }) => {
+const InputField = ({ id, value, label, name, placeholder, type, className, onChange, onBlur,
+     maxLength, min, max, ref, error, readOnly }) => {
     const handleChange = (e) => {
         const { value } = e.target;
         // onChange(value);
@@ -24,6 +25,9 @@ const InputField = ({ id, value, label, name, placeholder, type, className, onCh
                 ref={ref}
                 onChange={onChange}
                 onBlur={onBlur}
+                min={min}
+                max={max}
+                readOnly={readOnly}
             />
         </React.Fragment>
     )
